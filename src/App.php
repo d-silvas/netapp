@@ -9,6 +9,7 @@ class App
     {
         $this->localHost = new Host();
         $this->localHost->addInterface(NetworkInterface::createFromCidr(gethostbyname(gethostname()) . "/24"));
+        $this->localHost->scanNet();
     }
 
     public function getLocalHost() 

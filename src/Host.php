@@ -9,8 +9,17 @@ class Host
 
     }
 
-    public function addInterface (NetworkInterface $interface) 
+    public function addInterface(NetworkInterface $interface) 
     {
         $this->interfaces[] = $interface;
+    }
+
+    public function getInterfaces()
+    {
+        return $this->interfaces;
+    }
+
+    public function scanNet() {
+        $this->interfaces[0]->getSubnet()->webServerScan();
     }
 }
