@@ -22,6 +22,8 @@ class ComposerStaticInitb24d49d680f2a8bab26d7dbb35200fe9
 
     public static $classMap = array (
         'NetApp\\App' => __DIR__ . '/../..' . '/src/App.php',
+        'NetApp\\DB\\Config' => __DIR__ . '/../..' . '/src/DB/Config.php',
+        'NetApp\\DB\\Connection' => __DIR__ . '/../..' . '/src/DB/Connection.php',
         'NetApp\\Host' => __DIR__ . '/../..' . '/src/Host.php',
         'NetApp\\NetworkInterface' => __DIR__ . '/../..' . '/src/NetworkInterface.php',
         'NetApp\\Subnet' => __DIR__ . '/../..' . '/src/Subnet.php',

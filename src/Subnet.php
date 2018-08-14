@@ -6,7 +6,7 @@ class Subnet
     private $subnetAddr;
     private $mask;
 
-    public function __construct(int $subnetAddr, int $mask) {
+    public function __construct($subnetAddr, $mask) {
         $this->subnetAddr = $subnetAddr;
         $this->mask = $mask;
     }
@@ -25,7 +25,7 @@ class Subnet
 
             if (is_resource($connection)) {
                 echo "<td>" . $strIp . "</td>";
-                echo "<td>" . gethostbyaddr($ip) . "</td>";
+                echo "<td>" . gethostbyaddr($strIp) . "</td>";
                 echo "<td>" . $port . "</td>";
                 echo "<td>" . getservbyport($port, "tcp") . "</td>";
                 echo "<td>Open</td>";

@@ -1,0 +1,11 @@
+Cool new features in php7:
+- Spaceship operator
+- Null coalesce operator
+- Type hints int, string, ... (can be strict or not) -- also for return values
+- random_bytes(), random_int()
+
+Links that have helped:
+- https://stackoverflow.com/questions/8903991/check-whether-a-session-is-new-in-php
+- https://stackoverflow.com/questions/4559925/why-check-both-isset-and-empty/4560099
+- http://www.sqlitetutorial.net/sqlite-php/connect/
+- 

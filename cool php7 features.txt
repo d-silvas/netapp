@@ -1,4 +1,0 @@
-- Spaceship operator
-- Null coalesce operator
-- Type hints int, string, ... (can be strict or not) -- also for return values
-- rrandom_bytes(), random_int()

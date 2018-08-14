@@ -19,7 +19,8 @@ class Host
         return $this->interfaces;
     }
 
-    public function scanNet() {
+    public function scanNet() 
+    {
         $this->interfaces[0]->getSubnet()->webServerScan();
     }
 }

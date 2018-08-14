@@ -8,7 +8,7 @@ class NetworkInterface
     private $gateway = 0;
     private $subnet;
 
-    public function __construct (int $ip = 0, int $mask = 0, int $gateway = 0, Subnet $subnet) 
+    public function __construct ($ip, $mask, $gateway, $subnet) 
     {
         $this->ip = $ip;
         $this->mask = $mask;
@@ -19,7 +19,7 @@ class NetworkInterface
     /***
      * Accepts string "192.168.3.3/24"
      */
-    public static function createFromCidr (string $cidr = "")
+    public static function createFromCidr ($cidr)
     {
         $cidrArr = explode("/", $cidr);
         $intIp = ip2long($cidrArr[0]);
